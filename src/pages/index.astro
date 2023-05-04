@@ -65,8 +65,19 @@ import ArrowLeft from "@astropub/icons/ArrowLeft";
         <p class="text-2xl pt-1 font-bold text-green-500">Hydrolyzed~</p>
         <p class="text-2xl pt-1 font-bold text-cyan-500">pakpim</p>
         <h2 class="text-3xl font-bold pt-3 text-slate-800">Sponsored โดย</h2>
-        <a href="#register"
+        <a href="#prize"
           ><p class="text-2xl pt-1 font-bold text-slate-800">Anon-136</p></a
+        >
+      </div>
+    </div>
+
+    <div class="h-screen" id="prize">
+      <div class="h-full flex flex-col justify-center items-center">
+        <h2 class="text-3xl font-bold">รางวัล</h2>
+        <button
+          id="reveal-prize"
+          class="mt-3 rounded-md bg-purple-400 px-4 py-1"
+          >Click Here to Reveal!</button
         >
       </div>
     </div>
@@ -104,6 +115,7 @@ import ArrowLeft from "@astropub/icons/ArrowLeft";
         </div>
       </div>
     </div>
+
     <div class="h-screen" id="gean">
       <div class="h-full flex flex-col items-center">
         <div class="h-full flex items-center">
@@ -123,3 +135,17 @@ import ArrowLeft from "@astropub/icons/ArrowLeft";
     </div>
   </main>
 </Layout>
+
+<script>
+  document.getElementById("reveal-prize").addEventListener("click", () => {
+    if (document.getElementById("reveal-prize").innerHTML != "🎁 ไม่มี 🎁") {
+      document.getElementById("reveal-prize").innerHTML = "🎁 ไม่มี 🎁";
+      document.getElementById("reveal-prize").classList.remove("bg-purple-400");
+      document.getElementById("reveal-prize").classList.add("text-9xl");
+    } else {
+      document
+        .querySelector("#register")
+        .scrollIntoView({ behavior: "smooth" });
+    }
+  });
+</script>
