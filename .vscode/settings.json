@@ -1,0 +1,8 @@
+{
+  "files.associations": {
+    "*.css": "tailwindcss",
+    "*.scss": "tailwindcss",
+    "*.cjs": "clojure"
+  },
+  "scss.lint.unknownAtRules": "ignore"
+}
