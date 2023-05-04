@@ -6,7 +6,7 @@ import ArrowLeft from "@astropub/icons/ArrowLeft";
 <Layout title="Gean Dev Pre TOI19">
   <main class="w-full text-white bg-slate-800">
     <div class="h-screen" id="greet">
-      <div class="h-full flex justify-center items-center flex-col">
+      <div class="h-full flex justify-center items-center flex-col text-center">
         <h1 class="text-5xl font-bold">
           Pre TOI19 by <span class="text-orange-500"
             ><a
@@ -39,7 +39,7 @@ import ArrowLeft from "@astropub/icons/ArrowLeft";
     </div>
 
     <div class="h-screen" id="about">
-      <div class="h-full flex flex-col justify-center items-center">
+      <div class="h-full flex flex-col justify-center items-center text-center">
         <h2 class="text-3xl font-bold">
           ราย<span class="text-blue-400">ละเอีย</span>ด
         </h2>
@@ -72,7 +72,7 @@ import ArrowLeft from "@astropub/icons/ArrowLeft";
     </div>
 
     <div class="h-screen" id="prize">
-      <div class="h-full flex flex-col justify-center items-center">
+      <div class="h-full flex flex-col justify-center items-center text-center">
         <h2 class="text-3xl font-bold">รางวัล</h2>
         <button
           id="reveal-prize"
@@ -138,10 +138,10 @@ import ArrowLeft from "@astropub/icons/ArrowLeft";
 
 <script>
   document.getElementById("reveal-prize").addEventListener("click", () => {
-    if (document.getElementById("reveal-prize").innerHTML != "🎁 ไม่มี 🎁") {
-      document.getElementById("reveal-prize").innerHTML = "🎁 ไม่มี 🎁";
+    if (document.getElementById("reveal-prize").innerHTML != "ไม่มี 🎁") {
+      document.getElementById("reveal-prize").innerHTML = "ไม่มี 🎁";
       document.getElementById("reveal-prize").classList.remove("bg-purple-400");
-      document.getElementById("reveal-prize").classList.add("text-9xl");
+      document.getElementById("reveal-prize").classList.add("text-8xl");
     } else {
       document
         .querySelector("#register")
