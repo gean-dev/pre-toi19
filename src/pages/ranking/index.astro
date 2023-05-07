@@ -1,0 +1,19 @@
+---
+import Layout from "../../layouts/Layout.astro";
+import Scoreboard from "../../components/Scoreboard.svelte";
+---
+
+<Layout title="Ranking - Gean Dev Pre TOI19">
+  <main class="w-full text-white bg-slate-800">
+    <div class="h-full" id="greet">
+      <div class="flex justify-center items-center flex-col text-center pt-20 text-6xl font-thin">
+        <span>Pre TOI1<span class="text-orange-500">9 Ranking</span></span>
+      </div>
+      <div class="flex justify-center items-center flex-col text-center py-20">
+				<div class="border rounded-lg overflow-hidden border-gray-500">
+					<Scoreboard client:load></Scoreboard>
+				</div>
+      </div>
+    </div>
+  </main>
+</Layout>
