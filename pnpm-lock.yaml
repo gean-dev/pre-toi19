@@ -11,24 +11,20 @@ specifiers:
   astro: ^2.3.3
   prettier: 2.8.8
   prettier-plugin-tailwindcss: ^0.2.8
-  react: ^18.0.0
   react-dom: ^18.0.0
-  react-table: ^7.8.0
   svelte: ^3.54.0
   tailwind-scrollbar-hide: ^1.1.7
   tailwindcss: ^3.0.24
 
 dependencies:
-  '@astrojs/react': 2.1.3_lhsvdmrfrkqkmxtqosqgyd3k4i
+  '@astrojs/react': 2.1.3_fuof5to4pv54mcwg6fbrg5cnlu
   '@astrojs/svelte': 2.1.1_astro@2.4.2+svelte@3.59.0
   '@astrojs/tailwind': 3.1.2_n454vk2b4qohnehzn5g6kzgrd4
   '@astropub/icons': 0.2.0_astro@2.4.2
   '@types/react': 18.2.6
   '@types/react-dom': 18.2.4
   astro: 2.4.2
-  react: 18.2.0
-  react-dom: 18.2.0_react@18.2.0
-  react-table: 7.8.0_react@18.2.0
+  react-dom: 18.2.0
   svelte: 3.59.0
   tailwind-scrollbar-hide: 1.1.7
   tailwindcss: 3.3.2
@@ -106,7 +102,7 @@ packages:
       prismjs: 1.29.0
     dev: false
 
-  /@astrojs/react/2.1.3_lhsvdmrfrkqkmxtqosqgyd3k4i:
+  /@astrojs/react/2.1.3_fuof5to4pv54mcwg6fbrg5cnlu:
     resolution: {integrity: sha512-m0PgAEZOF0bZFYwRszCu9DvW62xaExUyuYw/7M9+sOWTr91/t6E6UFuui3h7uNVteFSAeHXoeIGgbUPheR2A5Q==}
     engines: {node: '>=16.12.0'}
     peerDependencies:
@@ -119,8 +115,7 @@ packages:
       '@babel/plugin-transform-react-jsx': 7.21.5_@babel+core@7.21.8
       '@types/react': 18.2.6
       '@types/react-dom': 18.2.4
-      react: 18.2.0
-      react-dom: 18.2.0_react@18.2.0
+      react-dom: 18.2.0
     transitivePeerDependencies:
       - supports-color
     dev: false
@@ -2819,29 +2814,13 @@ packages:
     resolution: {integrity: sha512-NuaNSa6flKT5JaSYQzJok04JzTL1CA6aGhv5rfLW3PgqA+M2ChpZQnAC8h8i4ZFkBS8X5RqkDBHA7r4hej3K9A==}
     dev: false
 
-  /react-dom/18.2.0_react@18.2.0:
+  /react-dom/18.2.0:
     resolution: {integrity: sha512-6IMTriUmvsjHUjNtEDudZfuDQUoWXVxKHhlEGSk81n4YFS+r/Kl99wXiwlVXtPBtJenozv2P+hxDsw9eA7Xo6g==}
     peerDependencies:
       react: ^18.2.0
     dependencies:
       loose-envify: 1.4.0
-      react: 18.2.0
       scheduler: 0.23.0
-    dev: false
-
-  /react-table/7.8.0_react@18.2.0:
-    resolution: {integrity: sha512-hNaz4ygkZO4bESeFfnfOft73iBUj8K5oKi1EcSHPAibEydfsX2MyU6Z8KCr3mv3C9Kqqh71U+DhZkFvibbnPbA==}
-    peerDependencies:
-      react: ^16.8.3 || ^17.0.0-0 || ^18.0.0
-    dependencies:
-      react: 18.2.0
-    dev: false
-
-  /react/18.2.0:
-    resolution: {integrity: sha512-/3IjMdb2L9QbBdWiW5e3P2/npwMBaU9mHCSCUzNln0ZCYbcfTsGbTJrU/kGemdH2IWmB2ioZ+zkxtmq6g09fGQ==}
-    engines: {node: '>=0.10.0'}
-    dependencies:
-      loose-envify: 1.4.0
     dev: false
 
   /read-cache/1.0.0:
