@@ -11,9 +11,11 @@
     "format": "prettier --write ."
   },
   "dependencies": {
+    "@astrojs/svelte": "^2.1.1",
     "@astrojs/tailwind": "^3.1.2",
     "@astropub/icons": "^0.2.0",
-    "astro": "^2.3.4",
+    "astro": "^2.3.3",
+    "svelte": "^3.54.0",
     "tailwind-scrollbar-hide": "^1.1.7",
     "tailwindcss": "^3.0.24"
   },
