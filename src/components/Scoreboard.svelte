@@ -63,12 +63,12 @@
 </script>
 
 <div class="scoreboard">
-  <table>
+  <table class="border-separate border-spacing-0 rounded-lg border border-gray-500 mx-auto overflow-hidden text-center">
     <thead>
       <tr>
-        <th class="border-collapse border px-8 py-3 border-grey-500">Rank</th>
-        <th class="border-collapse border px-8 py-3 border-grey-500">Name</th>
-        <th class="border-collapse border px-8 py-3 border-grey-500">
+        <th class="border-collapse border px-8 py-3 border-gray-500">Rank</th>
+        <th class="border-collapse border px-8 py-3 border-gray-500">Name</th>
+        <th class="border-collapse border px-8 py-3 border-gray-500">
           <button on:click={() => (
 						reverse = sortKey === "A" ? !reverse : false,
 						sortKey = "A"
@@ -83,7 +83,7 @@
             </div>
           </button>
         </th>
-        <th class="border-collapse border px-8 py-3 border-grey-500">
+        <th class="border-collapse border px-8 py-3 border-gray-500">
           <button on:click={() => (
 						reverse = sortKey === "B" ? !reverse : false,
 						sortKey = "B"
@@ -98,7 +98,7 @@
 						</div>
 					</button>
         </th>
-        <th class="border-collapse border px-8 py-3 border-grey-500">
+        <th class="border-collapse border px-8 py-3 border-gray-500">
           <button on:click={() => (
 						reverse = sortKey === "C" ? !reverse : false,
 						sortKey = "C"
@@ -113,7 +113,7 @@
 						</div>
 					</button>
         </th>
-        <th class="border-collapse border px-8 py-3 border-grey-500">
+        <th class="border-collapse border px-8 py-3 border-gray-500">
           <button on:click={() => (
 						reverse = sortKey === "total" ? !reverse : false,
 						sortKey = "total"
@@ -133,26 +133,26 @@
     <tbody>
       {#each Users as user}
         <tr>
-          <td class="border-collapse border px-8 py-3 border-grey-500"
+          <td class="border-collapse border px-8 py-3 border-gray-500"
             >{getRank(user, sortKey)}</td
           >
-          <td class="border-collapse border px-8 py-3 border-grey-500 text-left"
+          <td class="border-collapse border px-8 py-3 border-gray-500 text-left"
             >{getMedal(user)+user.name}</td
           >
           <td
-            class="border-collapse border px-8 py-3 border-grey-500 font-bold"
+            class="border-collapse border px-8 py-3 border-gray-500 font-bold"
             style="color: {RedToGreen(user.A / 100)}">{user.A}</td
           >
           <td
-            class="border-collapse border px-8 py-3 border-grey-500 font-bold"
+            class="border-collapse border px-8 py-3 border-gray-500 font-bold"
             style="color: {RedToGreen(user.B / 100)}">{user.B}</td
           >
           <td
-            class="border-collapse border px-8 py-3 border-grey-500 font-bold"
+            class="border-collapse border px-8 py-3 border-gray-500 font-bold"
             style="color: {RedToGreen(user.C / 100)}">{user.C}</td
           >
           <td
-            class="border-collapse border px-8 py-3 border-grey-500 font-bold"
+            class="border-collapse border px-8 py-3 border-gray-500 font-bold"
             style="color: {RedToGreen((user.A + user.B + user.C) / 300)}"
             >{user.A + user.B + user.C}</td
           >
