@@ -136,7 +136,7 @@
           <td class="border-collapse border px-8 py-3 border-gray-500"
             >{getRank(user, sortKey)}</td
           >
-          <td class="border-collapse border px-8 py-3 border-gray-500 text-left"
+          <td class="whitespace-nowrap border-collapse border px-8 py-3 border-gray-500 text-left"
             >{getMedal(user)+user.name}</td
           >
           <td
